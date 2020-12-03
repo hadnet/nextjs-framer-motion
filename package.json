@@ -1,0 +1,60 @@
+{
+  "name": "verifica-ai",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fluentui/merge-styles": "^8.0.0-beta.2",
+    "@fluentui/react": "^8.0.0-beta.23",
+    "@fluentui/react-button": "^1.0.0-beta.15",
+    "@fluentui/react-cards": "^1.0.0-beta.23",
+    "@fluentui/react-icons": "^0.3.9",
+    "@fluentui/utilities": "^8.0.0-beta.7",
+    "framer-motion": "^2.9.5",
+    "next": "10.0.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.12.1",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/node": "^14.14.7",
+    "@types/react": "^16.9.56",
+    "@types/styled-components": "^5.1.4",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,json}": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
