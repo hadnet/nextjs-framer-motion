@@ -1,4 +1,4 @@
-export {Container} from './Content';
+export {Container} from './Container';
 export {Circle} from './Circle';
 export {Footer} from './Footer';
 export {Grid} from './Grid';
