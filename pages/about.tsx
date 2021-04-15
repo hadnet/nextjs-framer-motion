@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import {CompoundButton} from '@fluentui/react/lib-commonjs/compat/Button';
+import {CompoundButton} from '@fluentui/react/lib-commonjs/Button';
 import {Container, Hero, Title, SubTitle, Remark, H3, Circle} from '@/components';
 import {Stack} from '@fluentui/react';
 import {motion} from 'framer-motion';
